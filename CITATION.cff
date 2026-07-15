@@ -11,7 +11,9 @@ authors:
     given-names: "Roberto Miguel de Oliveira"
     orcid: "https://orcid.org/0000-0002-8346-4155"
 
-repository-code: "https://github.com/YOUR_GITHUB_USERNAME/CEUS-Reproducibility"
+repository-code: "https://github.com/RobertoOlivetree/building-level-accessibility"
+
+doi: "10.5281/zenodo.21366486"
 
 license: "MIT"
 
