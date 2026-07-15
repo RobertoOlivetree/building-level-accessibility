@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+
+title: "Building-Level Accessibility for Older Adults in the 15-Minute City: Effects of Spatial Aggregation and Slope-Adjusted Pedestrian Networks"
+
+message: "If you use this repository, please cite it using the metadata below."
+
+type: software
+
+authors:
+  - family-names: "Machado"
+    given-names: "Roberto Miguel de Oliveira"
+    orcid: "https://orcid.org/0000-0002-8346-4155"
+
+repository-code: "https://github.com/YOUR_GITHUB_USERNAME/CEUS-Reproducibility"
+
+license: "MIT"
+
+version: "1.0.0"
+
+date-released: "2026-07-15"
+
+keywords:
+  - Urban accessibility
+  - Spatial analysis
+  - Geographic Information Systems
+  - Building-level accessibility
+  - Older adults
+  - Principal Component Analysis
+  - Moran's I
+  - Python
+
+abstract: >
+  Reproducible workflow accompanying the manuscript on building-level
+  accessibility for older adults, including accessibility modelling,
+  spatial aggregation, principal component analysis, and spatial
+  autocorrelation analysis.
