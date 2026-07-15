@@ -6,9 +6,9 @@ This repository contains the complete reproducible workflow supporting the manus
 
 **Building-Level Accessibility for Older Adults in the 15-Minute City: Effects of Spatial Aggregation and Slope-Adjusted Pedestrian Networks**
 
-### Repository structure
+## Repository structure
 
-```
+```text
 notebooks/
     00_building_population.ipynb
     01_parish_accessibility_original_workflow_clean.ipynb
@@ -24,21 +24,33 @@ outputs/
 figures/
 ```
 
-### Requirements
+## Requirements
 
-Python packages are listed in `requirements.txt`.
+The required Python packages are listed in `requirements.txt`.
 
-### Data
+## Data availability
 
-Large datasets are archived separately through Zenodo.
+The complete datasets, intermediate files, and analytical outputs supporting this study are publicly available through Zenodo:
 
-The Zenodo DOI will be added after the first public release.
+**DOI:** https://doi.org/10.5281/zenodo.21366486
 
-### Author
+The Python notebooks and reproducible workflow are maintained in this GitHub repository.
 
-Roberto Miguel de Oliveira Machado  
+## Citation
+
+If you use this repository, please cite both the associated journal article and the Zenodo dataset:
+
+https://doi.org/10.5281/zenodo.21366486
+
+## Author
+
+**Roberto Miguel de Oliveira Machado**
+
 ORCID: https://orcid.org/0000-0002-8346-4155
 
-### License
+Affiliation: CICS.NOVA – Interdisciplinary Centre of Social Sciences, NOVA University Lisbon
 
+## License
+
+This project is distributed under the MIT License.
 MIT License
