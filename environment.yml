@@ -1,0 +1,19 @@
+name: building-level-accessibility
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.2
+  - pandas
+  - numpy
+  - geopandas
+  - shapely
+  - networkx
+  - rasterio
+  - scipy
+  - joblib
+  - scikit-learn
+  - libpysal
+  - esda
+  - matplotlib
+  - pyogrio
+  - jupyterlab
