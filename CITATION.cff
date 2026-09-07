@@ -1,38 +1,24 @@
 cff-version: 1.2.0
+message: "If you use this repository, please cite it using the information below."
 
-title: "Building-Level Accessibility for Older Adults in the 15-Minute City: Effects of Spatial Aggregation and Slope-Adjusted Pedestrian Networks"
+title: "Building-Level Accessibility and Spatial Aggregation: Reproducible Data and Code"
 
-message: "If you use this repository, please cite it using the metadata below."
-
-type: software
+type: dataset
 
 authors:
   - family-names: "Machado"
-    given-names: "Roberto Miguel de Oliveira"
-    orcid: "https://orcid.org/0000-0002-8346-4155"
+    given-names: "Roberto M. O."
+  - family-names: "Tenedório"
+    given-names: "José António"
+  - family-names: "Santos"
+    given-names: "Teresa"
+
+version: "2.0.0"
+
+doi: "10.5281/zenodo.22650242"
+
+date-released: "2026-09-07"
 
 repository-code: "https://github.com/RobertoOlivetree/building-level-accessibility"
 
-doi: "10.5281/zenodo.21366486"
-
 license: "MIT"
-
-version: "1.0.0"
-
-date-released: "2026-07-15"
-
-keywords:
-  - Urban accessibility
-  - Spatial analysis
-  - Geographic Information Systems
-  - Building-level accessibility
-  - Older adults
-  - Principal Component Analysis
-  - Moran's I
-  - Python
-
-abstract: >
-  Reproducible workflow accompanying the manuscript on building-level
-  accessibility for older adults, including accessibility modelling,
-  spatial aggregation, principal component analysis, and spatial
-  autocorrelation analysis.
