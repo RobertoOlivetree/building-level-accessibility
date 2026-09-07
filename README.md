@@ -1,56 +1,65 @@
-# Building-Level Accessibility
+# Building-Level Accessibility and Spatial Aggregation
 
 ## Reproducible workflow
 
-This repository contains the complete reproducible workflow supporting the manuscript:
+This repository contains the reproducible analytical workflow supporting the study:
 
-**Building-Level Accessibility for Older Adults in the 15-Minute City: Effects of Spatial Aggregation and Slope-Adjusted Pedestrian Networks**
+**From buildings to spatial units: How spatial aggregation reshapes accessibility evidence and intervention priorities**
+
+The workflow evaluates pedestrian accessibility at the building level in Porto, Portugal, with mobility assumptions adapted to adults aged 65 years and over. It also examines how spatial aggregation affects accessibility variability, spatial dependence and the preservation of local intervention priorities.
+
+The analysis includes:
+
+- building-level pedestrian accessibility;
+- an 800 m pedestrian-network catchment;
+- directed pedestrian networks;
+- raster-directional slope derived from a 2 m Digital Terrain Model;
+- normalised Tobler-adjusted walking times;
+- walking speeds of 0.5, 0.7 and 0.9 m/s;
+- sensitivity analysis at 10, 15 and 20 minutes;
+- population allocation for residents aged 65 years and over;
+- Principal Component Analysis (PCA);
+- Urban Attractiveness Index (UAI);
+- Ageing Accessibility Vulnerability Index (AAVI);
+- Global Moran's I and Local Indicators of Spatial Association (LISA);
+- spatial aggregation using 100 m, 250 m and 500 m regular grids and BGRI statistical subsections;
+- priority-retention analysis using 5%, 10% and 20% thresholds.
 
 ## Repository structure
 
 ```text
 notebooks/
-    00_building_population.ipynb
-    01_parish_accessibility_original_workflow_clean.ipynb
-    02_merge_parish_results.ipynb
-    03_final_index_and_spatial_analysis.ipynb
+    01_allocate_population_65plus.ipynb
+
+    02a_pedestrian_accessibility_aldoar_foz_nevogilde.ipynb
+    02b_pedestrian_accessibility_bonfim.ipynb
+    02c_pedestrian_accessibility_campanha.ipynb
+    02d_pedestrian_accessibility_cedofeita.ipynb
+    02e_pedestrian_accessibility_lordelo_ouro_massarelos.ipynb
+    02f_pedestrian_accessibility_paranhos.ipynb
+    02g_pedestrian_accessibility_ramalde.ipynb
+
+    03_integrate_porto_and_walking_sensitivity.ipynb
+    04_uai_aavi_spatial_aggregation.ipynb
 
 data/
     raw/
     intermediate/
-    final/
+    processed/
 
-outputs/
-figures/
-```
+results/
+    tables/
+    figures/
+    spatial/
 
-## Requirements
+docs/
+    DATA_DICTIONARY.md
+    EXPECTED_RESULTS.md
 
-The required Python packages are listed in `requirements.txt`.
-
-## Data availability
-
-The complete datasets, intermediate files, and analytical outputs supporting this study are publicly available through Zenodo:
-
-**DOI:** https://doi.org/10.5281/zenodo.21366486
-
-The Python notebooks and reproducible workflow are maintained in this GitHub repository.
-
-## Citation
-
-If you use this repository, please cite both the associated journal article and the Zenodo dataset:
-
-https://doi.org/10.5281/zenodo.21366486
-
-## Author
-
-**Roberto Miguel de Oliveira Machado**
-
-ORCID: https://orcid.org/0000-0002-8346-4155
-
-Affiliation: CICS.NOVA – Interdisciplinary Centre of Social Sciences, NOVA University Lisbon
-
-## License
-
-This project is distributed under the MIT License.
+README.md
+requirements.txt
+environment.yml
+CITATION.cff
+LICENSE
+.gitignoree MIT License.
 MIT License
