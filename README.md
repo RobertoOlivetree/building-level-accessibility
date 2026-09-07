@@ -1,36 +1,32 @@
 # Building-Level Accessibility and Spatial Aggregation
 
-## Reproducible workflow
+## Overview
 
-This repository contains the reproducible analytical workflow supporting the study:
+This repository contains the reproducible analytical workflow for a building-level pedestrian accessibility and spatial aggregation study conducted in Porto, Portugal.
 
-**From buildings to spatial units: How spatial aggregation reshapes accessibility evidence and intervention priorities**
-
-The workflow evaluates pedestrian accessibility at the building level in Porto, Portugal, with mobility assumptions adapted to adults aged 65 years and over. It also examines how spatial aggregation affects accessibility variability, spatial dependence and the preservation of local intervention priorities.
+The workflow uses the building level as the reference spatial representation and evaluates how aggregation changes accessibility variability, spatial dependence and the retention of local intervention priorities. Adults aged 65 years and over provide the demographic and mobility context. Population is introduced only after construction of the Urban Attractiveness Index (UAI), through the Ageing Accessibility Vulnerability Index (AAVI), which is used as a complementary territorial screening measure.
 
 The analysis includes:
 
-- building-level pedestrian accessibility;
-- an 800 m pedestrian-network catchment;
-- directed pedestrian networks;
+- allocation of the population aged 65 years and over from 2021 BGRI statistical subsections to residential buildings;
+- building-level pedestrian accessibility for the seven Porto parishes;
+- a fixed 800 m pedestrian-network catchment;
 - raster-directional slope derived from a 2 m Digital Terrain Model;
-- normalised Tobler-adjusted walking times;
-- walking speeds of 0.5, 0.7 and 0.9 m/s;
-- sensitivity analysis at 10, 15 and 20 minutes;
-- population allocation for residents aged 65 years and over;
-- Principal Component Analysis (PCA);
-- Urban Attractiveness Index (UAI);
-- Ageing Accessibility Vulnerability Index (AAVI);
+- flat and normalised Tobler-adjusted walking times at 0.5, 0.7 and 0.9 m/s;
+- 10, 15 and 20 minute walking-sensitivity analysis;
+- Principal Component Analysis (PCA) and construction of the UAI;
+- equal-weight, imputation and complete-case robustness checks;
 - Global Moran's I and Local Indicators of Spatial Association (LISA);
-- spatial aggregation using 100 m, 250 m and 500 m regular grids and BGRI statistical subsections;
-- priority-retention analysis using 5%, 10% and 20% thresholds.
+- spatial aggregation using 100 m, 250 m and 500 m regular grids and 2021 BGRI statistical subsections;
+- variance-loss, spatial-dependence and priority-retention diagnostics;
+- sensitivity of priority identification at 5%, 10% and 20% lower-UAI thresholds;
+- AAVI as a post-UAI territorial demographic screening measure.
 
 ## Repository structure
 
 ```text
 notebooks/
     01_allocate_population_65plus.ipynb
-
     02a_pedestrian_accessibility_aldoar_foz_nevogilde.ipynb
     02b_pedestrian_accessibility_bonfim.ipynb
     02c_pedestrian_accessibility_campanha.ipynb
@@ -38,9 +34,9 @@ notebooks/
     02e_pedestrian_accessibility_lordelo_ouro_massarelos.ipynb
     02f_pedestrian_accessibility_paranhos.ipynb
     02g_pedestrian_accessibility_ramalde.ipynb
-
     03_integrate_porto_and_walking_sensitivity.ipynb
     04_uai_aavi_spatial_aggregation.ipynb
+    README_EXECUTION_ORDER.md
 
 data/
     raw/
@@ -61,5 +57,4 @@ requirements.txt
 environment.yml
 CITATION.cff
 LICENSE
-.gitignoree MIT License.
-MIT License
+.gitignore
