@@ -1,1 +1,60 @@
+# macOS
+.DS_Store
 
+# Windows
+Thumbs.db
+desktop.ini
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editors
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+~*
+
+# Python build / packaging
+build/
+dist/
+*.egg-info/
+
+# Large external raw datasets
+data/raw/*.tif
+data/raw/*.tiff
+data/raw/*.gpkg
+
+# Generated intermediate data
+data/intermediate/*
+!data/intermediate/README.md
+
+# Generated processed data
+data/processed/*
+!data/processed/README.md
+
+# Generated analytical results
+results/tables/*
+!results/tables/README.md
+
+results/figures/*
+!results/figures/README.md
+
+results/spatial/*
+!results/spatial/README.md
+
+# Local archives
+*.zip
